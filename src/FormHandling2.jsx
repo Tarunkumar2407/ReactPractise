@@ -23,37 +23,42 @@ const FormHandling2 = () => {
     const name = e.target.name;
 
     setFullName((preValue) => {
-        if(name === "fname"){
-              return {
-                fname: value,
-                lname: preValue.lname,
-                email: preValue.email,
-                phone: preValue.phone,
-            };
-        }else if(name === "lname"){
-            return {
-                fname: preValue.fname,
-                lname: value,
-                email: preValue.email,
-                phone: preValue.phone,
-            };
+        return {
+            ...preValue,
+            [name] : value,
         }
-        else if(name === "email"){
-            return {
-                fname: preValue.fname,
-                lname: preValue.lname,
-                email: value,
-                phone: preValue.phone,
-            };
-        }
-        else if(name === "phone"){
-            return {
-                fname: preValue.fname,
-                lname: preValue.lname,
-                email: preValue.email,
-                phone: value,
-            };
-        }
+
+        // if(name === "fname"){
+        //       return {
+        //         fname: value,
+        //         lname: preValue.lname,
+        //         email: preValue.email,
+        //         phone: preValue.phone,
+        //     };
+        // }else if(name === "lname"){
+        //     return {
+        //         fname: preValue.fname,
+        //         lname: value,
+        //         email: preValue.email,
+        //         phone: preValue.phone,
+        //     };
+        // }
+        // else if(name === "email"){
+        //     return {
+        //         fname: preValue.fname,
+        //         lname: preValue.lname,
+        //         email: value,
+        //         phone: preValue.phone,
+        //     };
+        // }
+        // else if(name === "phone"){
+        //     return {
+        //         fname: preValue.fname,
+        //         lname: preValue.lname,
+        //         email: preValue.email,
+        //         phone: value,
+        //     };
+        // }
     })
   }
 
@@ -64,6 +69,8 @@ const FormHandling2 = () => {
     <form onSubmit={handleSubmit}>
        <div>
          <h1>Hello {fullName.fname} {fullName.lname}</h1>
+         <p>{fullName.email}</p>
+         <p>{fullName.phone}</p>
          <input type='text' 
          onChange={handleInput} 
          placeholder='Enter First Name' 
