@@ -11,6 +11,7 @@ import TimeChange from './TimeChange';
 import DigitalClock from './DigitalClock';
 import FormHandling from './FormHandling';
 import FormHandling2 from './FormHandling2';
+import IncDecCounter from './IncDecCounter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -23,7 +24,8 @@ root.render(
     {/* <TimeChange /> */}
     {/* <DigitalClock /> */}
     {/* <FormHandling /> */}
-    <FormHandling2 />
+    {/* <FormHandling2 /> */}
+    <IncDecCounter />
   </React.StrictMode>
 );
 
