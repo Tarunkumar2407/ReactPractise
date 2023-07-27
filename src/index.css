@@ -1,13 +1,42 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inter:wght@300;400;500;600&family=Merriweather:ital@1&family=Montserrat&family=Poppins:wght@500&family=Roboto+Mono&family=Sacramento&display=swap');
+
+.body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.heading {
+  color: orange;
+  text-align: center;
+  font-family: 'Caveat Brush', cursive;
+}
+
+.date-time {
+  display: flex;
+  justify-content: space-between;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+}
+
+.images img {
+  width: 300px;
+  height: 400px;
+}
+
+.greet-box{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.greet-box h1 {
+  padding: 25px;
+  background-color: rgb(245, 241, 188);
+  border-radius: 20px;
 }

@@ -1,13 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import App from './App';
+// import Greeting from './Greeting';
+import BasicCalculator from './BasicCalculator';
 import reportWebVitals from './reportWebVitals';
+import Props from './Props';
+import ClickCounter from './ClickCounter';
+import TimeChange from './TimeChange';
+import DigitalClock from './DigitalClock';
+import FormHandling from './FormHandling';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    {/* <Greeting /> */}
+    {/* <BasicCalculator />  */}
+    {/* <Props /> */}
+    {/* <ClickCounter /> */}
+    {/* <TimeChange /> */}
+    {/* <DigitalClock /> */}
+    <FormHandling />
   </React.StrictMode>
 );
 
