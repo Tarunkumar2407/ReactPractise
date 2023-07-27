@@ -10,6 +10,7 @@ import ClickCounter from './ClickCounter';
 import TimeChange from './TimeChange';
 import DigitalClock from './DigitalClock';
 import FormHandling from './FormHandling';
+import FormHandling2 from './FormHandling2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,7 +22,8 @@ root.render(
     {/* <ClickCounter /> */}
     {/* <TimeChange /> */}
     {/* <DigitalClock /> */}
-    <FormHandling />
+    {/* <FormHandling /> */}
+    <FormHandling2 />
   </React.StrictMode>
 );
 
