@@ -1,4 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import AddIcon from '@mui/icons-material/Add';
+import RemoveIcon from '@mui/icons-material/Remove';
 
 const IncDecCounter = () => {
   
@@ -21,8 +23,8 @@ const IncDecCounter = () => {
   return (
     <div>
       <h1>{counter}</h1>
-      <button onClick={handleInc}>Increase</button>
-      <button onClick={handleDec}>Decrease</button>
+      <button onClick={handleInc}><AddIcon /></button>
+      <button onClick={handleDec}><RemoveIcon /></button>
     </div>
   )
 }
